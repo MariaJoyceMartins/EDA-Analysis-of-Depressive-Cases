@@ -172,6 +172,7 @@ AND moderate_symptoms IS NULL;
 
 # UNIVARIATE EXPLORATORY ANALYSIS 
 
+![image](https://github.com/user-attachments/assets/f1049bfd-32f6-46dc-9733-9ee893334550)
 
 
 
