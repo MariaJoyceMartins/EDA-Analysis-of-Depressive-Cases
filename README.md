@@ -181,6 +181,59 @@ AND moderate_symptoms IS NULL;
 ![image](https://github.com/user-attachments/assets/f1049bfd-32f6-46dc-9733-9ee893334550)
 
 
+Quantitative variables
 
+````
+SELECT
+    -- Estatísticas para RIDAGEYR
+    AVG(RIDAGEYR) AS RIDAGEYR_avg,
+    STDDEV(RIDAGEYR) AS RIDAGEYR_stddev,
+    COUNT(RIDAGEYR) AS RIDAGEYR_count,
+    MIN(RIDAGEYR) AS RIDAGEYR_min,
+    MAX(RIDAGEYR) AS RIDAGEYR_max,
+    
+        -- Cálculo dos percentuais para RIDAGEYR
+    SUM(RIDAGEYR) * 0.01 AS RIDAGEYR_1_percent,
+    SUM(RIDAGEYR) * 0.25 AS RIDAGEYR_25_percent,
+    SUM(RIDAGEYR) * 0.50 AS RIDAGEYR_50_percent,
+    SUM(RIDAGEYR) * 0.75 AS RIDAGEYR_75_percent,
+    SUM(RIDAGEYR) * 0.99 AS RIDAGEYR_99_percent
+FROM 
+    d_w_p;
 
+SELECT
+    -- Estatísticas para INDFMINC
+    AVG(INDFMINC) AS INDFMINC_avg,
+    STDDEV(INDFMINC) AS INDFMINC_stddev,
+    COUNT(INDFMINC) AS INDFMINC_count,
+    MIN(INDFMINC) AS INDFMINC_min,
+    MAX(INDFMINC) AS INDFMINC_max,
+    
+    
+    -- Cálculo dos percentuais para INDFMINC
+    SUM(INDFMINC) * 0.01 AS INDFMINC_1_percent,
+    SUM(INDFMINC) * 0.25 AS INDFMINC_25_percent,
+    SUM(INDFMINC) * 0.50 AS INDFMINC_50_percent,
+    SUM(INDFMINC) * 0.75 AS INDFMINC_75_percent,
+    SUM(INDFMINC) * 0.99 AS INDFMINC_99_percent
+FROM 
+    d_w_p;
 
+SELECT 
+    -- Estatísticas para PAG_MINW
+    AVG(PAG_MINW) AS PAG_MINW_avg,
+    STDDEV(PAG_MINW) AS PAG_MINW_stddev,
+    COUNT(PAG_MINW) AS PAG_MINW_count,
+    MIN(PAG_MINW) AS PAG_MINW_min,
+    MAX(PAG_MINW) AS PAG_MINW_max,
+    
+    -- Cálculo dos percentuais para PAG_MINW
+    SUM(PAG_MINW) * 0.01 AS PAG_MINW_1_percent,
+    SUM(PAG_MINW) * 0.25 AS PAG_MINW_25_percent,
+    SUM(PAG_MINW) * 0.50 AS PAG_MINW_50_percent,
+    SUM(PAG_MINW) * 0.75 AS PAG_MINW_75_percent,
+    SUM(PAG_MINW) * 0.99 AS PAG_MINW_99_percent
+FROM 
+    d_w_p;
+
+´´´
