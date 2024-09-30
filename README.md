@@ -2,10 +2,12 @@
 
 # Data Processing 
 
+
+```
 -- Checking for inconsistencies in the data --
 
-''' SELECT RIAGENDR FROM demo_phq
-WHERE RIAGENDR NOT IN ('1', '2') '''
+SELECT RIAGENDR FROM demo_phq
+WHERE RIAGENDR NOT IN ('1', '2')
 
 -- variavel ok -- 
 
@@ -169,6 +171,8 @@ AND severe_symptoms IS NULL
 AND moderate_symptoms IS NULL;
 
 -- there are no null columns -- 
+
+```
 
 # UNIVARIATE EXPLORATORY ANALYSIS 
 
