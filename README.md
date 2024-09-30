@@ -4,8 +4,8 @@
 
 -- Checking for inconsistencies in the data --
 
-SELECT RIAGENDR FROM demo_phq
-WHERE RIAGENDR NOT IN ('1', '2')
+''' SELECT RIAGENDR FROM demo_phq
+WHERE RIAGENDR NOT IN ('1', '2') '''
 
 -- variavel ok -- 
 
@@ -82,7 +82,7 @@ SELECT
         CASE WHEN DPQ060 = 0 THEN 1 ELSE 0 END +
         CASE WHEN DPQ070 = 0 THEN 1 ELSE 0 END +
         CASE WHEN DPQ080 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ090 = 0 THEN 1 ELSE 0 END) AS categoria_0,
+        CASE WHEN DPQ090 = 0 THEN 1 ELSE 0 END) AS categoria_0, 
         
     SUM(CASE WHEN DPQ010 = 1 THEN 1 ELSE 0 END +
         CASE WHEN DPQ020 = 1 THEN 1 ELSE 0 END +
