@@ -191,13 +191,7 @@ SELECT
     COUNT(RIDAGEYR) AS RIDAGEYR_count,
     MIN(RIDAGEYR) AS RIDAGEYR_min,
     MAX(RIDAGEYR) AS RIDAGEYR_max,
-    
-        -- Cálculo dos percentuais para RIDAGEYR
-    SUM(RIDAGEYR) * 0.01 AS RIDAGEYR_1_percent,
-    SUM(RIDAGEYR) * 0.25 AS RIDAGEYR_25_percent,
-    SUM(RIDAGEYR) * 0.50 AS RIDAGEYR_50_percent,
-    SUM(RIDAGEYR) * 0.75 AS RIDAGEYR_75_percent,
-    SUM(RIDAGEYR) * 0.99 AS RIDAGEYR_99_percent
+
 FROM 
     d_w_p;
 
@@ -209,13 +203,7 @@ SELECT
     MIN(INDFMINC) AS INDFMINC_min,
     MAX(INDFMINC) AS INDFMINC_max,
     
-    
-    -- Cálculo dos percentuais para INDFMINC
-    SUM(INDFMINC) * 0.01 AS INDFMINC_1_percent,
-    SUM(INDFMINC) * 0.25 AS INDFMINC_25_percent,
-    SUM(INDFMINC) * 0.50 AS INDFMINC_50_percent,
-    SUM(INDFMINC) * 0.75 AS INDFMINC_75_percent,
-    SUM(INDFMINC) * 0.99 AS INDFMINC_99_percent
+
 FROM 
     d_w_p;
 
@@ -227,12 +215,6 @@ SELECT
     MIN(PAG_MINW) AS PAG_MINW_min,
     MAX(PAG_MINW) AS PAG_MINW_max,
     
-    -- Cálculo dos percentuais para PAG_MINW
-    SUM(PAG_MINW) * 0.01 AS PAG_MINW_1_percent,
-    SUM(PAG_MINW) * 0.25 AS PAG_MINW_25_percent,
-    SUM(PAG_MINW) * 0.50 AS PAG_MINW_50_percent,
-    SUM(PAG_MINW) * 0.75 AS PAG_MINW_75_percent,
-    SUM(PAG_MINW) * 0.99 AS PAG_MINW_99_percent
 FROM 
     d_w_p;
 
