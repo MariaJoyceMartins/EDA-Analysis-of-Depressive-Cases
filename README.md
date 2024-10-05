@@ -303,6 +303,7 @@ doing this with each column of the categories
 
 getting the following result:
 
-![image](https://github.com/user-attachments/assets/572362af-8085-47eb-b9a5-81a8c83bcf27)
+![image](https://github.com/user-attachments/assets/b3af7e70-161c-44ae-b5b5-967e28927f01)
+
 
 
