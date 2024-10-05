@@ -313,5 +313,5 @@ and in the future analyze the relationship with other variables:
 # Analysis of Healthy eating score
 
 1. I created a histogram graph of the healthy eating score
-![Healthy eating score](https://github.com/user-attachments/assets/c8c504a0-cfcd-4747-96d3-34c3ad64ae93)
+![image](https://github.com/user-attachments/assets/2210ff86-56fd-4198-a522-cd79847a2e39)
 
