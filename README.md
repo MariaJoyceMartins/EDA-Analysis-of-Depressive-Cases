@@ -223,7 +223,8 @@ FROM
 ```
  # Analysis of exercise minutes per week (pag_min)
 
-# 1. I rounded the value to terms so that we only have the minutes, without the seconds and make it easier to convert from minutes to hours
+# 1. I rounded the value 
+to terms so that we only have the minutes, without the seconds and make it easier to convert from minutes to hours
 
 for this, I used the =ROUND function from Google Sheets: 
 
@@ -233,7 +234,8 @@ getting the following before vs after (sample of 14 of 1,000 columns)
 
 ![image](https://github.com/user-attachments/assets/3c5583e0-cc80-49c5-8ce9-0cccbfde321c)
 
-# 2. I converted minutes to hours to make analysis easier
+# 2. I converted minutes to hours 
+to make analysis easier
 
 To do this, I divided by 60 in Google Sheets:
 
@@ -244,7 +246,8 @@ getting the following before vs after (sample of 14 of 1,000 columns):
 ![image](https://github.com/user-attachments/assets/54695630-411c-4aae-83a5-1aacdfde7a3c)
 
 
-# 3. I categorized and grouped hourly intervals based on scientific research
+# 3. I categorized and grouped hourly intervals
+ based on scientific research
 
 Follow the categories and the reasoning for each:
 
