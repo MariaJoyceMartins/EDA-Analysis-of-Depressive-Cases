@@ -222,3 +222,14 @@ FROM
 
 ```
  # Analysis of exercise minutes per week (pag_min)
+
+1. I rounded the value to terms so that we only have the minutes, without the seconds and make it easier to convert from minutes to hours
+
+for this, I used the =ROUND function from Google Sheets: 
+
+=ROUND(Table1[PAG_MINW])
+
+getting the following before vs after
+
+![image](https://github.com/user-attachments/assets/3c5583e0-cc80-49c5-8ce9-0cccbfde321c)
+
