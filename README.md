@@ -183,7 +183,7 @@ AND moderate_symptoms IS NULL;
 
 Quantitative variables
 
-````
+```
 SELECT
     -- Estatísticas para RIDAGEYR
     AVG(RIDAGEYR) AS RIDAGEYR_avg,
@@ -218,4 +218,7 @@ SELECT
 FROM 
     d_w_p;
 
-´´´
+´´'
+
+```
+ # Analysis of exercise minutes per week (pag_min)
