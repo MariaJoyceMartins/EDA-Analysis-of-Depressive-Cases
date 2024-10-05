@@ -316,3 +316,7 @@ and in the future analyze the relationship with other variables:
 ![image](https://github.com/user-attachments/assets/2210ff86-56fd-4198-a522-cd79847a2e39)
 
 Pattern: bell-shaped histogram, normal distribution
+
+# Analysis of depression symptom
+# I created a bar chart to understand the distribution of depression symptom categories
+![image](https://github.com/user-attachments/assets/9fb993a3-4b88-43d8-8a3c-11db63249636)
