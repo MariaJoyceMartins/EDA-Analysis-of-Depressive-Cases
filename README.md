@@ -251,7 +251,7 @@ getting the following before vs after (sample of 14 of 1,000 columns):
 
 Follow the categories and the reasoning for each:
 
-# 3.1 0–124 hours per week: Poor
+# 3.1 0–1,24 hours per week: Poor
 Based on WHO guidelines: WHO recommends at least 150 minutes of moderate physical activity or 75 minutes of vigorous physical activity per week for adults. Those who do not achieve these levels are at risk for health problems, including chronic diseases and poor mental health.
 
 Rationale: This range is considered insufficient to achieve significant health benefits and is associated with higher risks of depression and other mental health conditions.
