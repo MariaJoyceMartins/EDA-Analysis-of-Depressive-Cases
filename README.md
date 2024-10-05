@@ -244,5 +244,50 @@ getting the following before vs after (sample of 14 of 1,000 columns):
 ![image](https://github.com/user-attachments/assets/54695630-411c-4aae-83a5-1aacdfde7a3c)
 
 
+3. I categorized and grouped hourly intervals based on scientific research
+
+Follow the categories and the reasoning for each:
+
+3.10–74 minutes per week: Poor
+Based on WHO guidelines: WHO recommends at least 150 minutes of moderate physical activity or 75 minutes of vigorous physical activity per week for adults. Those who do not achieve these levels are at risk for health problems, including chronic diseases and poor mental health.
+
+Rationale: This range is considered insufficient to achieve significant health benefits and is associated with higher risks of depression and other mental health conditions.
+
+Source: WHO, "Global Recommendations on Physical Activity for Health," 2010.
+
+3.2. 75–149 minutes per week: Good
+Based on WHO guidelines: This level of activity meets the minimum recommended level for health. WHO suggests that engaging in at least 75 minutes of vigorous activity or 150 minutes of moderate activity per week helps improve overall health and reduce the risk of several diseases.
+
+Rationale: Exercising during this interval can help improve mental health, reduce symptoms of depression and anxiety, and promote overall well-being.
+
+Source: WHO, "Global Recommendations on Physical Activity for Health," 2010.
+
+3.3 5 to 10 hours per week: Very good
+Based on studies: Research published in the Journal of the American Medical Association (JAMA) indicated that individuals who exercise between 7 and 10 hours per week have significant cardiovascular benefits, a lower risk of depression, and improved overall mental health.
+
+Rationale: This range represents a more intense frequency, but still in line with recommendations for maintaining good mental and physical health. It is above the minimum recommendation, but not excessive.
+
+Source: JAMA, "Leisure Time Physical Activity and Mortality: A Detailed Pooled Analysis," 2015.
+
+3.4 10 to 20 hours per week: Exceptional
+Based on studies: According to a study in Lancet Psychiatry, people who engage in moderate or intense exercise for more than 10 hours per week have a significantly reduced risk of developing mental disorders, including depression, but the additional benefit begins to diminish after 15 hours.
+
+Rationale: Above 10 hours, there is an incremental reduction in benefits, and this range may indicate individuals with above-average exercise habits, possibly athletes or highly active individuals.
+
+Source: Lancet Psychiatry, “Associations between physical exercise and mental health: cross-sectional survey,” 2018.
+
+3.5 20 to 40 hours per week: High performance
+Based on studies: Research suggests that this level of exercise is typical of competitive athletes or those involved in high-performance physical activities, such as training for competitions. The Frontiers in Psychology study notes that excessive exercise can have negative impacts on mental health, such as burnout and increased risk of injury.
+
+Rationale: At this range, intense exercise may begin to have mixed effects on mental health, including risk of physical and psychological stress.
+
+Source: Frontiers in Psychology, “Overtraining and Mental Health in Athletes: A Systematic Review,” 2019.
+
+3.6 More than 40 hours per week: Overload
+Based on studies: Training more than 40 hours per week can be characterized as overload or excessive exercise, according to the American Journal of Sports Medicine study. Although some elite athletes train in this range, the risk of mental and physical burnout is high. In non-athletes, this may be a sign of dysfunctional exercise-related behaviors.
+
+Rationale: Excessive exercise has been associated with negative mental health effects, including chronic fatigue, burnout, and a potential increased risk of depression.
+
+Source: American Journal of Sports Medicine, "Exercise dependence and overtraining syndrome in endurance athletes," 2020.
 
 
