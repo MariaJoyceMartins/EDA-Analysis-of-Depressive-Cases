@@ -310,4 +310,8 @@ getting the following result:
 and in the future analyze the relationship with other variables: 
 ![image](https://github.com/user-attachments/assets/e64cb003-73fe-47d2-97ca-5408e47d21a1)
 
+# Analysis of Healthy eating score
+
+1. I created a histogram graph of the healthy eating score
+![Healthy eating score](https://github.com/user-attachments/assets/c8c504a0-cfcd-4747-96d3-34c3ad64ae93)
 
