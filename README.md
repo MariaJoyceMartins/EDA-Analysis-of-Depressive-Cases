@@ -178,7 +178,8 @@ AND moderate_symptoms IS NULL;
 
 👇problem tree to identify the main variables to be worked on in the univariate analysis and during this process understand if and how they answer our question
 
-![image](https://github.com/user-attachments/assets/f1049bfd-32f6-46dc-9733-9ee893334550)
+![image](https://github.com/user-attachments/assets/059227d0-df8d-4ae4-93eb-ac7d3f2e8657)
+
 
 
 Quantitative variables
