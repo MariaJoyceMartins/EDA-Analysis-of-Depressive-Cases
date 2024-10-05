@@ -308,6 +308,6 @@ getting the following result:
 # 5. I created a graph to analyze the participation of each category
 
 and in the future analyze the relationship with other variables: 
-![exercise per week](https://github.com/user-attachments/assets/3b2be4c9-c4b9-4b61-b8a2-cdb3a5ded6d1)
+![image](https://github.com/user-attachments/assets/e64cb003-73fe-47d2-97ca-5408e47d21a1)
 
 
