@@ -233,3 +233,16 @@ getting the following before vs after (sample of 14 of 1,000 columns)
 
 ![image](https://github.com/user-attachments/assets/3c5583e0-cc80-49c5-8ce9-0cccbfde321c)
 
+2. I converted minutes to hours to make analysis easier
+
+To do this, I divided by 60 in Google Sheets:
+
+=(B2/60)
+
+getting the following before vs after (sample of 14 of 1,000 columns):
+
+![image](https://github.com/user-attachments/assets/54695630-411c-4aae-83a5-1aacdfde7a3c)
+
+
+
+
