@@ -312,6 +312,7 @@ and in the future analyze the relationship with other variables:
 
 # Analysis of Healthy eating score
 
-1. I created a histogram graph of the healthy eating score
+# 1. I created a histogram graph of the healthy eating score
 ![image](https://github.com/user-attachments/assets/2210ff86-56fd-4198-a522-cd79847a2e39)
 
+Pattern: bell-shaped histogram, normal distribution
