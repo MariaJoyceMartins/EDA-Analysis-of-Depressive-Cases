@@ -293,4 +293,16 @@ Rationale: Excessive exercise has been associated with negative mental health ef
 
 Source: American Journal of Sports Medicine, "Exercise dependence and overtraining syndrome in endurance athletes," 2020.
 
+# 4. I counted the quantity of each category:
+
+using the =COUNT function:
+
+=COUNT(I:I)
+
+doing this with each column of the categories
+
+getting the following result:
+
+![image](https://github.com/user-attachments/assets/572362af-8085-47eb-b9a5-81a8c83bcf27)
+
 
