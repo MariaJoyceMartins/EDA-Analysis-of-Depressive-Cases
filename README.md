@@ -1,5 +1,12 @@
 # EDA-Analysis-of-Depressive-Cases
 
+# Questions to be answered:
+
+- What is the profile of individuals (adults over 18 years old) with depressive symptoms in the USA in the period 2005-2006?
+
+- Are healthy eating and physical activity habits associated with lower rates of depression in this population?
+
+
 # Data Processing 
 
 
