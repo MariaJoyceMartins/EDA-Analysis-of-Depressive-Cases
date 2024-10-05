@@ -229,7 +229,7 @@ for this, I used the =ROUND function from Google Sheets:
 
 =ROUND(Table1[PAG_MINW])
 
-getting the following before vs after
+getting the following before vs after (sample of 14 of 1,000 columns)
 
 ![image](https://github.com/user-attachments/assets/3c5583e0-cc80-49c5-8ce9-0cccbfde321c)
 
