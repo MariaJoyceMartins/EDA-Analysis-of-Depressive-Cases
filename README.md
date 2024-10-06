@@ -182,6 +182,9 @@ AND moderate_symptoms IS NULL;
 ```
 
 # UNIVARIATE EXPLORATORY ANALYSIS 
+Since one of the questions we want to answer is: ''What is the profile of individuals (adults over 18 years old) with depressive symptoms in the USA in the period 2005-2006?''
+
+We will analyze the variables of this problem tree below, filtering the results by ''moderate and severe symptoms''
 
 👇problem tree to identify the main variables to be worked on in the univariate analysis and during this process understand if and how they answer our question
 
