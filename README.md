@@ -312,17 +312,7 @@ getting the following result:
 # 5. I created a graph to analyze the participation of each category
 
 and in the future analyze the relationship with other variables: 
-![Captura de tela 2025-06-11 225609](https://github.com/user-attachments/assets/1f3493fb-a387-4d11-a425-c33041c79560)
+![Chart Exercise Distribution](https://github.com/user-attachments/assets/2bab2938-4259-44fd-8b83-b16dfdc144b6)
 
 
-# Analysis of Healthy eating score
-
-# 1. I created a histogram graph of the healthy eating score
-![image](https://github.com/user-attachments/assets/2210ff86-56fd-4198-a522-cd79847a2e39)
-
-Pattern: bell-shaped histogram, normal distribution
-
-# Analysis of depression symptom
-# 1. I created a bar chart
- to understand the distribution of depression symptom categories
-![image](https://github.com/user-attachments/assets/9fb993a3-4b88-43d8-8a3c-11db63249636)
+# Filtering variables for people with depression, to understand their profile:
