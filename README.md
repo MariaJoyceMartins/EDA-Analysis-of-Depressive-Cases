@@ -290,7 +290,7 @@ Rationale: Above 10 hours, there is an incremental reduction in benefits, and th
 
 Source: Lancet Psychiatry, “Associations between physical exercise and mental health: cross-sectional survey,” 2018.
 
-# 3.5 More than 20 hours per week: 
+# 3.5 More than 20 hours per week: Overload
 Based on studies: Research suggests that this level of exercise is typical of competitive athletes or those involved in high-performance physical activities, such as training for competitions. The Frontiers in Psychology study notes that excessive exercise can have negative impacts on mental health, such as burnout and increased risk of injury.
 
 Rationale: At this range, intense exercise may begin to have mixed effects on mental health, including risk of physical and psychological stress.
@@ -312,7 +312,8 @@ getting the following result:
 # 5. I created a graph to analyze the participation of each category
 
 and in the future analyze the relationship with other variables: 
-![image](https://github.com/user-attachments/assets/e64cb003-73fe-47d2-97ca-5408e47d21a1)
+![Chart Exercise](https://github.com/user-attachments/assets/3da5080d-2149-4418-b9e3-d7781547119e)
+
 
 # Analysis of Healthy eating score
 
