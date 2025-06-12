@@ -312,7 +312,7 @@ getting the following result:
 # 5. I created a graph to analyze the participation of each category
 
 and in the future analyze the relationship with other variables: 
-![Chart Exercise](https://github.com/user-attachments/assets/3da5080d-2149-4418-b9e3-d7781547119e)
+![Captura de tela 2025-06-11 225609](https://github.com/user-attachments/assets/1f3493fb-a387-4d11-a425-c33041c79560)
 
 
 # Analysis of Healthy eating score
