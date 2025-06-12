@@ -290,19 +290,12 @@ Rationale: Above 10 hours, there is an incremental reduction in benefits, and th
 
 Source: Lancet Psychiatry, “Associations between physical exercise and mental health: cross-sectional survey,” 2018.
 
-# 3.5 20 to 40 hours per week: High performance
+# 3.5 More than 20 hours per week: 
 Based on studies: Research suggests that this level of exercise is typical of competitive athletes or those involved in high-performance physical activities, such as training for competitions. The Frontiers in Psychology study notes that excessive exercise can have negative impacts on mental health, such as burnout and increased risk of injury.
 
 Rationale: At this range, intense exercise may begin to have mixed effects on mental health, including risk of physical and psychological stress.
 
 Source: Frontiers in Psychology, “Overtraining and Mental Health in Athletes: A Systematic Review,” 2019.
-
-# 3.6 More than 40 hours per week: Overload
-Based on studies: Training more than 40 hours per week can be characterized as overload or excessive exercise, according to the American Journal of Sports Medicine study. Although some elite athletes train in this range, the risk of mental and physical burnout is high. In non-athletes, this may be a sign of dysfunctional exercise-related behaviors.
-
-Rationale: Excessive exercise has been associated with negative mental health effects, including chronic fatigue, burnout, and a potential increased risk of depression.
-
-Source: American Journal of Sports Medicine, "Exercise dependence and overtraining syndrome in endurance athletes," 2020.
 
 # 4. I counted the quantity of each category:
 
