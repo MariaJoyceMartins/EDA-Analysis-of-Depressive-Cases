@@ -80,106 +80,9 @@ WHERE DMDEDUC = 9 AND 7;
 SELECT HEI2015C1_TOTALVEG
 FROM d_w_p
 
--- calculating quantity of each category --
-CREATE TABLE categorias_somadas AS
-SELECT
-    SUM(CASE WHEN DPQ010 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ020 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ030 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ040 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ050 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ060 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ070 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ080 = 0 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ090 = 0 THEN 1 ELSE 0 END) AS categoria_0, 
-        
-    SUM(CASE WHEN DPQ010 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ020 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ030 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ040 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ050 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ060 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ070 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ080 = 1 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ090 = 1 THEN 1 ELSE 0 END) AS categoria_1,
-
-    SUM(CASE WHEN DPQ010 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ020 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ030 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ040 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ050 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ060 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ070 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ080 = 2 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ090 = 2 THEN 1 ELSE 0 END) AS categoria_2,
-
-    SUM(CASE WHEN DPQ010 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ020 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ030 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ040 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ050 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ060 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ070 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ080 = 3 THEN 1 ELSE 0 END +
-        CASE WHEN DPQ090 = 3 THEN 1 ELSE 0 END) AS categoria_3
-
-FROM 
-    d_w_p;
-    
-
--- Create a column mild symptons --
-ALTER TABLE categorias_somadas ADD COLUMN mild_symptoms INT;
-
--- Combining category 0 and 1 (mild symptoms) --
-UPDATE categorias_somadas
-SET mild_symptoms = categoria_0 + categoria_1;
-
--- Alter the name of colums of categorias somadas --
-
-ALTER TABLE categorias_somadas CHANGE categoria_2 moderate_symptoms INT;
-ALTER TABLE categorias_somadas CHANGE categoria_3 severe_symptoms INT;
-
--- checking the results --
-
-SELECT 	*
-FROM categorias_somadas
-
-
--- checking the values null --
-
-
-SELECT 
-    SUM(CASE WHEN RIAGENDR IS NULL THEN 1 ELSE 0 END) AS RIAGENDR_null_count,
-    SUM(CASE WHEN RIDAGEYR IS NULL THEN 1 ELSE 0 END) AS RIDAGEYR_null_count,
-    SUM(CASE WHEN RIDRETH1 IS NULL THEN 1 ELSE 0 END) AS RIDRETH1_null_count,
-    SUM(CASE WHEN DMDEDUC IS NULL THEN 1 ELSE 0 END) AS DMDEDUC_null_count,
-    SUM(CASE WHEN INDFMINC IS NULL THEN 1 ELSE 0 END) AS INDFMINC_null_count,
-    SUM(CASE WHEN HEI2015_TOTAL_SCORE IS NULL THEN 1 ELSE 0 END) AS HEI2015_TOTAL_SCORE_null_count,
-    SUM(CASE WHEN PAG_MINW IS NULL THEN 1 ELSE 0 END) AS PAG_MINW_null_count,
-    SUM(CASE WHEN ADHERENCE IS NULL THEN 1 ELSE 0 END) AS ADHERENCE_null_count,
-    
-    (SUM(CASE WHEN RIAGENDR IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS RIAGENDR_null_percentage,
-    (SUM(CASE WHEN RIDAGEYR IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS RIDAGEYR_null_percentage,
-    (SUM(CASE WHEN RIDRETH1 IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS RIDRETH1_null_percentage,
-    (SUM(CASE WHEN DMDEDUC IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS DMDEDUC_null_percentage,
-    (SUM(CASE WHEN INDFMINC IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS INDFMINC_null_percentage,
-    (SUM(CASE WHEN HEI2015_TOTAL_SCORE IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS HEI2015_TOTAL_SCORE_percentage,
-    (SUM(CASE WHEN PAG_MINW IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS PAG_MINW_null_percentage,
-    (SUM(CASE WHEN ADHERENCE IS NULL THEN 1 ELSE 0 END) / COUNT(*)) * 100 AS ADHERENCE_null_percentage
-
-FROM 
-    d_w_p;
-
-
-SELECT mild_symptoms, severe_symptoms, moderate_symptoms
-FROM categorias_somadas
-WHERE mild_symptoms IS NULL
-AND severe_symptoms IS NULL
-AND moderate_symptoms IS NULL;
-
--- there are no null columns -- 
-
 ```
+
+
 
 # UNIVARIATE EXPLORATORY ANALYSIS 
 Since one of the questions we want to answer is: ''What is the profile of individuals (adults over 18 years old) with depressive symptoms in the USA in the period 2005-2006?''
@@ -191,47 +94,64 @@ We will analyze the variables of this problem tree below, filtering the results 
 ![image](https://github.com/user-attachments/assets/059227d0-df8d-4ae4-93eb-ac7d3f2e8657)
 
 
+Here's the rewritten text, formatted as a data expert's explanation for a GitHub project:
 
-Quantitative variables
+---
+# Categorizing and Grouping Depressive Symptom Levels
 
+To assign a final classification to each individual's results from the DPQ questionnaires (DPQ10, DPQ20, ... DPQ9) and group them by depressive symptom level, I employed the following methodology:
+
+---
+# 1.1 Initial Calculation Exploration and Data Challenges
+
+Initially, I experimented with various calculation methods (mean, median, mode, and weighted average) to determine the most representative final score. A significant challenge encountered was the **high frequency of zero responses** within the questionnaires.
+
+For instance, consider a participant with the following scores:
+* Two scores of '3' (indicating severe depressive symptoms)
+* Four scores of '2' (indicating moderate depressive symptoms)
+* Four scores of '0' (indicating no symptoms)
+
+While there were responses indicating high depressive symptom levels (2 for moderate and 3 for severe), the four zeros, despite not representing the majority of scores, skewed the simple mean towards 0 or 1. This would incorrectly suggest low depressive symptom levels, which was not an accurate representation of the individual's overall state.
+
+---
+# 1.2 Solution: Implementing a Weighted Average
+
+To address the data distortion caused by the numerous zero responses and to emphasize the severity of higher symptom levels, I implemented a **weighted average** calculation. The weighting was applied as follows:
+
+* **Score 0 = Weight 0**
+* **Score 1 = Weight 1**
+* **Score 2 = Weight 2**
+* **Score 3 = Weight 3**
+
+This approach provides greater consideration and impact to higher depressive symptom levels, aligning the final score more accurately with the presence of more severe symptoms.
+
+---
+# 1.3 Calculation and Classification Logic (Excel Implementation)
+
+The weighted average was calculated using the following formula in Excel:
+
+```excel
+=SUM(ARRAYFORMULA(Notas_da_pessoa * VLOOKUP(Notas_da_pessoa, Peso_de_Cada_Nota, 2, FALSE))) / SUM(ARRAYFORMULA(VLOOKUP(Notas_da_pessoa, Peso_de_Cada_Nota, 2, FALSE)))
 ```
-SELECT
-    -- Estatísticas para RIDAGEYR
-    AVG(RIDAGEYR) AS RIDAGEYR_avg,
-    STDDEV(RIDAGEYR) AS RIDAGEYR_stddev,
-    COUNT(RIDAGEYR) AS RIDAGEYR_count,
-    MIN(RIDAGEYR) AS RIDAGEYR_min,
-    MAX(RIDAGEYR) AS RIDAGEYR_max,
 
-FROM 
-    d_w_p;
+The resulting weighted average was then rounded to the nearest whole number:
 
-SELECT
-    -- Estatísticas para INDFMINC
-    AVG(INDFMINC) AS INDFMINC_avg,
-    STDDEV(INDFMINC) AS INDFMINC_stddev,
-    COUNT(INDFMINC) AS INDFMINC_count,
-    MIN(INDFMINC) AS INDFMINC_min,
-    MAX(INDFMINC) AS INDFMINC_max,
-    
-
-FROM 
-    d_w_p;
-
-SELECT 
-    -- Estatísticas para PAG_MINW
-    AVG(PAG_MINW) AS PAG_MINW_avg,
-    STDDEV(PAG_MINW) AS PAG_MINW_stddev,
-    COUNT(PAG_MINW) AS PAG_MINW_count,
-    MIN(PAG_MINW) AS PAG_MINW_min,
-    MAX(PAG_MINW) AS PAG_MINW_max,
-    
-FROM 
-    d_w_p;
-
-´´'
-
+```excel
+=ROUND(Média_ponderada)
 ```
+
+Finally, the rounded value was used to classify the individual's depressive symptom level:
+
+```excel
+=IF(Valor_arredondado <=1, "mild symptoms", IF(Valor_arredondado = 2, "moderate_symptoms", "severe_symptoms"))
+```
+
+This classification allows for the final visualization of the data through the distribution shown below:
+
+![depressive_symtons_distribution](https://github.com/user-attachments/assets/4d5918c6-06a3-49c9-91e1-6eeedf4855e3)
+
+
+
  # Analysis of exercise minutes per week (pag_min)
 
 # 1. I rounded the value 
