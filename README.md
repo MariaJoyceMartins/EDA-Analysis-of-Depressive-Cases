@@ -306,8 +306,8 @@ using the =COUNT function:
 doing this with each column of the categories
 
 getting the following result:
+![amout of exercise](https://github.com/user-attachments/assets/badaeb55-c37b-416b-8aad-92e0618c65a4)
 
-![image](https://github.com/user-attachments/assets/b3af7e70-161c-44ae-b5b5-967e28927f01)
 
 # 5. I created a graph to analyze the participation of each category
 
