@@ -94,7 +94,6 @@ We will analyze the variables of this problem tree below, filtering the results 
 ![image](https://github.com/user-attachments/assets/059227d0-df8d-4ae4-93eb-ac7d3f2e8657)
 
 
-Here's the rewritten text, formatted as a data expert's explanation for a GitHub project:
 
 ---
 # Categorizing and Grouping Depressive Symptom Levels
