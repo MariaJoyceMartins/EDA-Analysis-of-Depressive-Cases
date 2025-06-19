@@ -239,7 +239,8 @@ and in the future analyze the relationship with other variables:
 ## Gender
 
 ### 📊 Key Findings
-- **53% of the women** in the dataset are classified as experiencing depression.
+- **51,8% of the women** in the dataset are classified as experiencing depression.
 - While women represent the majority of the sample, the **percentage of men with depression is very close** to that of women.
 - This narrow difference suggests that **gender is not a major influencing factor** in identifying individuals with depression within this dataset.
+
 ![chart](https://github.com/user-attachments/assets/e5d1e8d2-162a-45e4-8d02-ea4a7b0df718)
